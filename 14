@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author Shanvi and Gyan
+ */
+
+
+
+// USING BYTE STREAM 
+public class Shan11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         // Create ArrayList
+        ArrayList<String> list = new ArrayList<>();
+
+        // 1. Adding elements
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Mango");
+        list.add("Orange");
+
+        System.out.println("Initial List: " + list);
+
+        // 2. Removing element
+        list.remove("Banana");
+        System.out.println("After removing Banana: " + list);
+
+        // 3. Searching for an element
+        if (list.contains("Mango")) {
+            System.out.println("Mango is found in the list");
+        } else {
+            System.out.println("Mango not found");
+        }
+         // 4. Updating element
+        list.set(1, "Grapes");  // replace element at index 1
+        System.out.println("After updating index 1: " + list);
+
+        // 5. Iterating through the list
+        System.out.println("Iterating using for-each loop:");
+        for (String item : list) {
+            System.out.println(item);
+        }
+    }
+}
